@@ -1,5 +1,5 @@
-## This Repo is for data science with R
-### All examples are assignments from edx course about R basics and data visualizations 
+# This repository is for data science with R
+### All examples are assignments from edx courses ( R basics and data visualizations). 
 
 
 ## Welcome to GitHub Pages
