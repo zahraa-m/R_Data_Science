@@ -1,4 +1,6 @@
-## This Repo is for data science with R 
+## This Repo is for data science with R
+### All examples are assignments from edx course about R basics and data visualizations 
+
 
 ## Welcome to GitHub Pages
 
