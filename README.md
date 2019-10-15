@@ -1,11 +1,7 @@
 # This repository is for data science with R
 ### All examples are assignments from edx courses ( R basics and data visualizations). 
-
-
-
-
-
-
+#
+#
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/zahraa-m/R-examples/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
