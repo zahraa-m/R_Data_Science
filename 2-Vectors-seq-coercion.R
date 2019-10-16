@@ -23,10 +23,10 @@ seq(1,100,2)
 length(seq(6, 55, 4/7))
 
 
-# Define the vector x
+# Define the vector n
 n <- c(1, 3, 5,"a")
 
-# Note that the x is character vector
+# Note that the n is character vector
 class(n)
 
 # convert n to integer vector
