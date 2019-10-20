@@ -19,3 +19,5 @@ data(murders)
 murder_rate <- (murders$total/murders$population)*100000
 # Calculate the average murder rate in the US 
 mean(murder_rate)
+
+
