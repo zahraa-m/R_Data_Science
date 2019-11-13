@@ -9,3 +9,7 @@ length(unique(x))
 
 #compute the frequencies of each unique height value
 tab <- table(x)
+
+#how many values are reported only once
+sum(tab==1)
+
