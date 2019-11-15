@@ -11,3 +11,9 @@ avg <- mean(x)
 stdev <- sd(x)
 pnorm(72,avg, stdev) - pnorm(69,avg, stdev)
 
+#Use normal approximation to estimate the proportion of heights between 79 and 81
+exact <- mean(x > 79 & x <= 81)
+approx <- pnorm(81, mean(x), sd(x))-pnorm(79, mean(x), sd(x))
+#how many times bigger the actual proportion is compared to the approximation.
+exact/approx
+
