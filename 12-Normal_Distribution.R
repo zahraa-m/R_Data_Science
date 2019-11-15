@@ -17,3 +17,8 @@ approx <- pnorm(81, mean(x), sd(x))-pnorm(79, mean(x), sd(x))
 #how many times bigger the actual proportion is compared to the approximation.
 exact/approx
 
+#Assume that the distribution of adult men in the world as normally distributed
+#with an average of 69 inches and a standard deviation of 3 inches.
+# use pnorm to calculate the proportion over 7 feet (7*12 inches)
+1 - pnorm(7*12, 69, 3)
+
