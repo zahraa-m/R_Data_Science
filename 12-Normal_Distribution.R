@@ -22,3 +22,8 @@ exact/approx
 # use pnorm to calculate the proportion over 7 feet (7*12 inches)
 1 - pnorm(7*12, 69, 3)
 
+#there are about 1 billion(10^9) men between the ages of 18 and 40 in the world.
+#use the normal distribution to estimate how many of these 1 billion men are at least seven feet tall?
+p<- 1-pnorm(7*12, 69, 3)
+round(p*10^9)
+
