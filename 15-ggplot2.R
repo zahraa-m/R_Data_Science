@@ -13,5 +13,7 @@ class(p)
 murders %>% ggplot(aes(x = population, y = total )) + geom_point()
 
 #add labels abb to the points on a plot.
-murders %>% ggplot(aes(population, total, label=abb) ) +geom_label()
-  
+murders %>% ggplot(aes(population, total, label=abb) ) + geom_label()
+ 
+#Rewrite the code above to make the labels blue
+murders %>% ggplot(aes(population, total,label= abb)) + geom_label(color="blue")
