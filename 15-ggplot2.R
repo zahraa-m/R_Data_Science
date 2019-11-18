@@ -1,3 +1,4 @@
+#loading ggplot and murders & heights datasets
 library(dplyr)
 library(ggplot2)
 library(dslabs)
