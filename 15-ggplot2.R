@@ -9,4 +9,6 @@ p <- ggplot(murders)
 p <- murders %>% ggplot()
 class(p)
 
+#create a scatter plot
+murders %>% ggplot(aes(x = population, y = total )) + geom_point()
 
