@@ -30,4 +30,4 @@ p + scale_x_log10() + scale_y_log10()
 p + ggtitle("Gun murder data")
 
 #make a histogram of the heights
-n <- <- heights %>% ggplot(aes(x=height)) + geom_histogram()
+n <- <- heights %>% ggplot(aes(x=height)) + geom_histogram(binwidth=1)
