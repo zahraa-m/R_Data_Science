@@ -24,3 +24,6 @@ murders %>% ggplot(aes(population, total, label = abb, color=region)) + geom_lab
 
 #Change both axes to be in the log scale
 p + scale_x_log10() + scale_y_log10()
+
+# add the title "Gun murder data" to the plot
+p + ggtitle("Gun murder data")
