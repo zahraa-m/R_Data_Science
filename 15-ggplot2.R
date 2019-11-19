@@ -28,3 +28,6 @@ p + scale_x_log10() + scale_y_log10()
 
 # add the title "Gun murder data" to the plot
 p + ggtitle("Gun murder data")
+
+#make a histogram of the heights
+n <- <- heights %>% ggplot(aes(x=height)) + geom_histogram()
