@@ -18,3 +18,6 @@ murders %>% ggplot(aes(population, total, label=abb) ) + geom_label()
  
 #Rewrite the code above to make the labels blue
 murders %>% ggplot(aes(population, total,label= abb)) + geom_label(color="blue")
+
+#Rewrite the code above to make the label color correspond to the state's region
+murders %>% ggplot(aes(population, total, label = abb, color=region)) + geom_label()
