@@ -43,5 +43,9 @@ heights %>% ggplot(aes(height, group=sex, color=sex)) + geom_density()
 #or 
 heights %>% ggplot(aes(height, group=sex, fill=sex)) + geom_density()
 
+#make the curves color transparent
+heights %>% ggplot(aes(height, fill = sex)) + geom_density(alpha=0.2) 
+
+
 
 
