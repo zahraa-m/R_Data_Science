@@ -37,3 +37,11 @@ heights %>% ggplot(aes(height)) + geom_density()
 
 #Create separate smooth density plots for males and females
 heights %>% ggplot(aes(height, group=sex)) + geom_density()
+
+#Change the density plots to add color for males and females curves
+heights %>% ggplot(aes(height, group=sex, color=sex)) + geom_density()
+#or 
+heights %>% ggplot(aes(height, group=sex, fill=sex)) + geom_density()
+
+
+
