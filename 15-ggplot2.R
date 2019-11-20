@@ -34,3 +34,6 @@ n <- <- heights %>% ggplot(aes(x=height)) + geom_histogram(binwidth=1)
 
 #create a smooth density plot of heights
 heights %>% ggplot(aes(height)) + geom_density()
+
+#Create separate smooth density plots for males and females
+heights %>% ggplot(aes(height, group=sex)) + geom_density()
