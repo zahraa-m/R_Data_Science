@@ -21,3 +21,6 @@ ref_avg <- NHANES %>% filter(AgeDecade == " 20-29" & Gender == "female") %>% sum
 
 #the min and max values for the same group as in the previous exercises.
 NHANES %>% filter(AgeDecade == " 20-29"  & Gender == "female") %>% summarise(minbp=min(BPSysAve, na.rm=TRUE), maxbp=max(BPSysAve, na.rm=TRUE))
+
+#compute the average and standard deviation of systolic blood pressure for females for each age group separately.
+NHANES %>%filter(Gender == "female") %>% group_by(AgeDecade) %>% summarise(average=mean(BPSysAve, na.rm=TRUE), standard_deviation=sd(BPSysAve, na.rm=TRUE))
