@@ -31,3 +31,6 @@ NHANES %>% filter(Gender=="male") %>% group_by(AgeDecade) %>% summarise(average=
 #Create a single summary table for the average and standard deviation of systolic blood pressure for female and male, group by age too!
 NHANES %>% group_by(AgeDecade, Gender) %>% summarise(average=mean(BPSysAve, na.rm=TRUE), standard_deviation=sd(BPSysAve, na.rm=TRUE))
 
+#compare systolic blood pressure across values of the Race1 variable for males between the ages of 40-49.
+NHANES %>% filter(AgeDecade==" 40-49" & Gender=="male") %>% group_by(Race1) %>% summarise(average=mean(BPSysAve, na.rm=TRUE), standard_deviation=sd(BPSysAve, na.rm=TRUE)) %>% arrange(average)
+
