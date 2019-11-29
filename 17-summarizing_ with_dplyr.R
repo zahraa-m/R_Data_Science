@@ -13,3 +13,9 @@ head(tab)
 
 #determine the average and standard deviation of systolic blood pressure
 ref <- NHANES %>% filter(AgeDecade == " 20-29" & Gender == "female") %>% summarise(average=mean(BPSysAve, na.rm=TRUE), standard_deviation=sd(BPSysAve, na.rm=TRUE))
+
+#assign the average to a numeric variable
+ref_avg <- NHANES %>% filter(AgeDecade == " 20-29" & Gender == "female") %>% summarize(average = mean(BPSysAve, na.rm = TRUE), standard_deviation = sd(BPSysAve, na.rm=TRUE)) %>% pull(average)
+#or
+ref_avg <- NHANES %>% filter(AgeDecade == " 20-29" & Gender == "female") %>% summarize(average = mean(BPSysAve, na.rm = TRUE), standard_deviation = sd(BPSysAve, na.rm=TRUE)) %>% .$average
+
