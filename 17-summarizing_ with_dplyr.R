@@ -19,3 +19,5 @@ ref_avg <- NHANES %>% filter(AgeDecade == " 20-29" & Gender == "female") %>% sum
 #or
 ref_avg <- NHANES %>% filter(AgeDecade == " 20-29" & Gender == "female") %>% summarize(average = mean(BPSysAve, na.rm = TRUE), standard_deviation = sd(BPSysAve, na.rm=TRUE)) %>% .$average
 
+#the min and max values for the same group as in the previous exercises.
+NHANES %>% filter(AgeDecade == " 20-29"  & Gender == "female") %>% summarise(minbp=min(BPSysAve, na.rm=TRUE), maxbp=max(BPSysAve, na.rm=TRUE))
