@@ -11,3 +11,5 @@ data(NHANES)
 tab <- NHANES %>% filter(Gender=="female" & AgeDecade==" 20-29") 
 head(tab)
 
+#determine the average and standard deviation of systolic blood pressure
+ref <- NHANES %>% filter(AgeDecade == " 20-29" & Gender == "female") %>% summarise(average=mean(BPSysAve, na.rm=TRUE), standard_deviation=sd(BPSysAve, na.rm=TRUE))
