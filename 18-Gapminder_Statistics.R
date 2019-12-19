@@ -32,9 +32,9 @@ gapminder %>% filter(year %in% c("1970", "2010")& continent=="Africa"& gdp!="NA"
 gapminder %>% filter(year %in% c("1970", "2010")& continent=="Africa"& gdp!="NA") %>% mutate(dollars_per_day=gdp/population/365) %>% ggplot(aes(x=dollars_per_day , fill=region))+geom_density(bw=0.5, position = "stack" )+scale_x_continuous(trans="log2")+facet_grid(.~year)
 
 #plotting infant mortality rates versus dollars per day for African countries.
-gapminder_Africa_2010 <- gapminder %>% filter(year=="2010" & continent=="Africa" & gdp!="NA") %>% mutate(dollars_per_day=gdp/population/365) %>% ggplot(aes(x=dollars_per_day, y=infant_mortality, color=region))+geom_point()
+gapminder_Africa_2010 <- gapminder %>% filter(year=="2010" & continent=="Africa" & gdp!="NA") %>% mutate(dollars_per_day=gdp/population/365) %>% ggplot(aes(x=dollars_per_day, y=infant_mortality, color=region))+geom_point()+scale_x_continuous(trans="log2")
 
-
+gapminder %>% filter(year %in% c("1970", "2010")& continent=="Africa"& gdp!="NA" & year!="NA" & infant_mortality!="NA") %>% mutate(dollars_per_day=gdp/population/365) %>% ggplot(aes(x=dollars_per_day, y=infant_mortality, label=country, color=region))+geom_point()+ geom_text()+scale_x_continuous(trans="log2")+facet_grid(year~.)
 
 
 
