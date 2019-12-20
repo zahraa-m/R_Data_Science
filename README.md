@@ -9,5 +9,5 @@
 <br/>
 <br/>
 
-Smooth Density Plot of Dollars Per Day for 1970 and 2010 in Africa
+<center>Smooth Density Plot of Dollars Per Day for 1970 and 2010 in Africa</center>
 ![smooth density plot of dollars per day for 1970 and 2010 in Africa](https://github.com/zahraa-m/R_Data_Science/blob/master/Plots/03.png)
