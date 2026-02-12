@@ -1,13 +1,13 @@
-# This repository is for data science with R
-### All examples are assignments from edx courses ( R basics and data visualizations). 
-#
-<br/>
-<br/>
+This repository contains my practice work for Data Science with R, where I learned and applied R programming for data analysis and visualization.
 
-![Self-reported heights in inches for males and females.](https://github.com/zahraa-m/R_Data_Science/blob/master/Plots/01.png)
+All code in this repository comes from assignments and exercises completed in the edX Data Science courses by Harvard University, taught by Prof. Rafael Irizarry.
 
-<br/>
-<br/>
+Courses completed:
 
-Smooth Density Plot of Dollars Per Day for 1970 and 2010 in Africa
-![smooth density plot of dollars per day for 1970 and 2010 in Africa](https://github.com/zahraa-m/R_Data_Science/blob/master/Plots/03.png)
+R Basics
+https://www.edx.org/learn/r-programming/harvard-university-data-science-r-basics
+
+Data Visualization
+https://www.edx.org/learn/data-visualization/harvard-university-data-science-visualization
+
+The repository includes scripts and notebooks covering R fundamentals, data manipulation, and data visualization techniques.
